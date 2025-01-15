@@ -28,3 +28,14 @@ class Player(GameSprite):
             self.rect.x -= self.speed
         if keys[K_RIGHT] and self.rect.x < win_width - 80:
             self.rect.x += self.speed
+#окно
+win_width = 600
+win_height = 500
+window = display.set_mode(win_width, win_height)
+back = (200, 255, 255)
+window.fill(back)
+
+game = True
+finish = False
+clock = time.Clock()
+FPS = 60
